@@ -1,0 +1,29 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  player_name: MyString
+  ancestry_and_hheritage: MyString
+  background: MyString
+  class: MyString
+  size: MyString
+  alignment: MyString
+  traits: MyString
+  deity: MyString
+  level: 1
+  hero_points: 1
+  experience_points: 1
+
+two:
+  name: MyString
+  player_name: MyString
+  ancestry_and_hheritage: MyString
+  background: MyString
+  class: MyString
+  size: MyString
+  alignment: MyString
+  traits: MyString
+  deity: MyString
+  level: 1
+  hero_points: 1
+  experience_points: 1
