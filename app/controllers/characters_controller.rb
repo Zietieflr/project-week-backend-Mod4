@@ -46,6 +46,6 @@ class CharactersController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def character_params
-      params.require(:character).permit(:name, :player_name, :ancestry_and_hheritage, :background, :class, :size, :alignment, :traits, :deity, :level, :hero_points, :experience_points)
+      params.require(:character).permit(:name, :player_name, :ancestry_and_heritage, :background, :character_class, :size, :alignment, :traits, :deity, :level, :hero_points, :experience_points)
     end
 end
