@@ -5,12 +5,12 @@ class CharactersController < ApplicationController
   def index
     @characters = Character.all
 
-    render json: @characters
+    render json: @characters, include: [:ability_score]
   end
 
   # GET /characters/1
   def show
-    render json: @character
+    render json: @character, include: [:ability_score]
   end
 
   # POST /characters
@@ -46,6 +46,9 @@ class CharactersController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def character_params
-      params.require(:character).permit(:name, :player_name, :ancestry_and_heritage, :background, :character_class, :size, :alignment, :traits, :deity, :level, :hero_points, :experience_points)
+      params.require(:character).permit(
+        :name, :player_name, :ancestry_and_heritage, :background, :character_class, :size, :alignment, :traits, :deity, :level, :hero_points, :experience_points, 
+        ability_score_attributes: [:id, :str, :dex, :con, :int, :wis, :cha],
+      )
     end
 end
