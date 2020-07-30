@@ -22,3 +22,18 @@ Character.create(
   hero_points: 0,
   experience_points: 0
 )
+
+Character.create(
+  name: 'Ankar Flowstep',
+  player_name: 'Logan',
+  ancestry_and_heritage: 'Halfling',
+  background: 'Dancer',
+  character_class: 'Bard',
+  size: 'S',
+  alignment: 'CG',
+  traits: 'Gregarious',
+  deity: 'Desna',
+  level: 1,
+  hero_points: 0,
+  experience_points: 0
+)
