@@ -50,7 +50,7 @@ class CharactersController < ApplicationController
     def character_params
       params.require(:character).permit(
         :name, :player_name, :ancestry_and_heritage, :background, :character_class, :size, :alignment, :traits, :deity, :level, :hero_points, :experience_points, 
-        ability_score_attributes: [:id, :str, :dex, :con, :int, :wis, :cha, :character_id, :_destroy],
+        ability_score_attributes: [:id, :str, :dex, :con, :int, :wis, :cha, :character_id],
       )
     end
 end
