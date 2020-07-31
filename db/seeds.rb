@@ -6,9 +6,10 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+AbilityScore.destroy_all
 Character.destroy_all
 
-Character.create(
+arven = Character.create(
   name: 'Arven Dhentry',
   player_name: 'Logan',
   ancestry_and_heritage: 'Half-Elf',
@@ -23,7 +24,17 @@ Character.create(
   experience_points: 0
 )
 
-Character.create(
+AbilityScore.create(
+  str: 12,
+  dex: 12,
+  con: 12,
+  int: 21,
+  wis: 10,
+  cha: 7,
+  character: arven
+)
+
+ankar = Character.create(
   name: 'Ankar Flowstep',
   player_name: 'Logan',
   ancestry_and_heritage: 'Halfling',
@@ -36,4 +47,14 @@ Character.create(
   level: 1,
   hero_points: 0,
   experience_points: 0
+)
+
+AbilityScore.create(
+  str: 6,
+  dex: 18,
+  con: 12,
+  int: 10,
+  wis: 8,
+  cha: 19,
+  character: ankar
 )
