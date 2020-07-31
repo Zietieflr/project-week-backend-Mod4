@@ -1,24 +1,34 @@
-# README
+#Digital Character Sheet for P2e
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+##Introduction
 
-Things you may want to cover:
+This page is designed to implement a digital character sheet for Pathfinder Second Edition. To run this app you will need two repos, the [Frontend](https://github.com/Zietieflr/project-week-frontend-Mod4) and the Backend(this one). This README will focus exclusively on Backend installation, while the [Frontend](https://github.com/Zietieflr/project-week-frontend-Mod4) will cover it's own installation, running the project, and have more information generally. 
 
-* Ruby version
+##Installation
+You will need Ruby on Rails installed. 
 
-* System dependencies
+In the local directory run: 
+```
+bundle install
+```
+This will install all of the dependencies for this project. Then run: 
+```
+rails db:migrate
+```
+This will initiate your personal tables for storing information. If you would like to have some initial seed data you may run:
+```
+rails db:seed
+```
+However, this is not a required step. 
 
-* Configuration
+##Server
+The [Frontend](https://github.com/Zietieflr/project-week-frontend-Mod4) file will cover this in more detail, however, if you need to have Rails run on a port other than 3000, use this command:
+```
+rails s -p <Desired Port Here>
+```
+ex:
+```
+rails s -p 9001
+```
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+More information on Rails can be found at [Ruby on Rails API](https://api.rubyonrails.org/).
